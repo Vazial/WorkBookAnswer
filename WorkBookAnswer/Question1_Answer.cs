@@ -6,16 +6,16 @@ namespace WorkBookAnswer
 {
     public class Question1_Answer
     {
-        public String Answer(int number)
+        public void Answer(int number)
         {
             var a = number % 3;
             if (a == 0)
             {
-                return "3の倍数です";
+                Console.WriteLine("3の倍数です");
             }
             else
             {
-                return "3の倍数ではありません";
+                Console.WriteLine("3の倍数ではありません");
             }
         }
     }

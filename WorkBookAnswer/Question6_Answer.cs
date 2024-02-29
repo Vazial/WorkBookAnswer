@@ -6,7 +6,7 @@ namespace WorkBookAnswer
 {
     public class Question6_Answer
     {
-        public int Answer()
+        public void Answer()
         {
             var count = 1;
             var sum = count;
@@ -24,17 +24,17 @@ namespace WorkBookAnswer
                     continue;
                 }
             }
-            return sum;
+            Console.WriteLine(sum);
         }
 
-        public int Answer2()
+        public void Answer2()
         {
             int sum = 0;
             for (int ii = 0; ii < 11; ii++)
             {
                 sum += ii;
             }
-            return sum;
+            Console.WriteLine(sum);
         }
     }
 }

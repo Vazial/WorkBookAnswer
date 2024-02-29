@@ -6,19 +6,18 @@ namespace WorkBookAnswer
 {
     public class Question3_Answer
     {
-        public String Answer(int year)
+        public void Answer(int year)
         {
             var a = year - 1;
             var b = a / 100;
             var c = b + 1;
-            return $"{c}世紀です";
+            Console.WriteLine($"{c}世紀です");
         }
 
-        public String Answer2(int year)
+        public void Answer2(int year)
         {
-            ;
             var century = ((year - 1) / 100) + 1;
-            return $"{century}世紀です";
+            Console.WriteLine($"{century}世紀です");
         }
     }
 }

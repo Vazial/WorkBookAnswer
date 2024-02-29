@@ -6,10 +6,10 @@ namespace WorkBookAnswer
 {
     public class Question5_Answer
     {
-        public int Answer(int number)
+        public void Answer(int number)
         {
             var div = number / 4;
-            return (number - (div * 4));
+            Console.WriteLine(number - (div * 4));
         }
     }
 }

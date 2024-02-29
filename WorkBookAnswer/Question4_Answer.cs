@@ -6,28 +6,28 @@ namespace WorkBookAnswer
 {
     public class Question4_Answer
     {
-        public String Answer(int year)
+        public void Answer(int year)
         {
             var leapYear = year % 400;
             if (leapYear == 0)
             {
-                return "うるう年です";
+                Console.WriteLine("うるう年です");
             }
             else
             {
                 if ((leapYear % 100) == 0)
                 {
-                    return "うるう年ではありません";
+                    Console.WriteLine("うるう年ではありません");
                 }
                 else
                 {
                     if ((leapYear % 4) == 0)
                     {
-                        return "うるう年です";
+                        Console.WriteLine("うるう年です");
                     }
                     else
                     {
-                        return "うるう年ではありません";
+                        Console.WriteLine("うるう年ではありません");
                     }
                 }
             }
